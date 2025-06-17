@@ -4,10 +4,10 @@ import tensorflow as tf
 import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler,OneHotEncoder,LabelEncoder
-from tensorflow.keras.models import load_model # type: ignore
+
 
 #load model
-model=load_model("model2.h5")
+model=tf.keras.models.load_model("model2.h5")
 
 with open('onehot_encoder_geo.pkl', 'rb')as file:
     onhot_encoder_geo=pickle.load(file)
