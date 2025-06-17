@@ -4,7 +4,7 @@ import tensorflow as tf
 import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler,OneHotEncoder,LabelEncoder
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model # type: ignore
 
 #load model
 model=load_model("model2.h5")
